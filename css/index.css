@@ -1,0 +1,180 @@
+/*视频*/
+
+.videoContent {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #1567f9;
+}
+
+
+/*视频头部*/
+
+.videoHeader,
+.data {
+	width: 100%;
+	height: 34px;
+	border-bottom: 2px solid #1567f9;
+	background: rgba(255, 255, 255, 0.2);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#33ffffff, endColorstr=#33ffffff);
+}
+
+.videoHeader>span,
+.data>span {
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+}
+
+.line {
+	width: 4px;
+	height: 20px;
+	display: block;
+	background-color: #01b8fd;
+	margin-top: 7px;
+}
+
+.textTitle {
+	margin-left: 6px;
+	background-color: #1f66cc;
+	height: 28px;
+	line-height: 24px;
+	border: 1px solid green;
+	padding: 0 8px;
+	margin-top: 2px;
+}
+
+.videoFrame {
+	width: 96%;
+	height: 320px;
+	margin: 10px auto 20px auto;
+}
+.videoFrame>img{
+	width: 100%;
+	height: 320px;
+}
+
+/*日期选择*/
+
+.selectDate {
+	width: 96%;
+	height: 32px;
+	border: 1px solid rgb(127, 127, 127);
+	margin: 0 auto;
+}
+.selectDate>img{
+	width: 100%;
+	height: 32px;
+}
+
+/*视频滚动*/
+
+.videoScroll {
+	width: 96%;
+	margin: 0 auto;
+}
+
+.videoList>li {
+	float: left;
+	width: 50%;
+	height: 164px;
+	margin-top: 10px;
+}
+
+.videoPhoto {
+	width: 98%;
+	height: 100%;
+	border: 1px solid #1567f9;
+}
+.videoPhoto>img{
+	width: 100%;
+	height: 100%;
+}
+.liOdd {
+	float: right !important;
+}
+
+
+/*地图*/
+
+.map {
+	width: 98%;
+	margin-left: 1%;
+	height: 636px;
+	border: 1px solid #1567f9;
+}
+.map>img{
+	width: 100%;
+	height: 636px;
+}
+.dataContent {
+	width: 98%;
+	border: 1px solid #1567f9;
+	margin-left: 1%;
+	margin-top: 10px;
+	height: 308px;
+}
+
+.data {
+	height: 34px;
+	border-bottom: 2px solid #1567f9;
+	background: rgba(255, 255, 255, 0.2);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#33ffffff, endColorstr=#33ffffff);
+}
+
+.data>span {
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+}
+
+.dataList {
+	height: 262px;
+	margin: 10px auto 10px auto;
+}
+.dataList>img{
+	width: 100%;
+	height: 262px;
+}
+
+/*右侧区域*/
+
+.stateContent {
+	border: 1px solid #1567f9;
+	height: 308px;
+}
+
+.state {
+	height: 34px;
+	border-bottom: 2px solid #1567f9;
+	background: rgba(255, 255, 255, 0.2);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#33ffffff, endColorstr=#33ffffff);
+}
+
+.state>span {
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+}
+
+.jobPerson {
+	margin-top: 10px;
+	height: 318px;
+}
+
+.changePerson {
+	margin-top: 10px;
+}
+.stateList>img{
+	width: 100%;
+	height: 274px;
+}
+.jobPerson .stateList>img{
+	width: 100%;
+	height: 284px;
+}

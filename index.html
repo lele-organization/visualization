@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8" />
+		<title>东岸可视化首页</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!--[if lt IE 9]>  <link rel="stylesheet" type="text/css" href="css/hack.css"/> <![endif]-->
+		<!--[if lte IE 8]>  <link rel="stylesheet" type="text/css" href="css/hack.css"/> <![endif]-->
+		<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+		<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->	
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<!--容器-->
+		<div class="container-fluid">
+			<!--背景图-->
+			<div class="bgbox">
+				<!--头部-->
+				<div class="header">
+					<ul class="headerUl">
+						<li class="leftLi">
+							<p>
+								<span class="temperature">13`C</span>
+								<img class="weather" src="img/weather.png" alt="" />
+							</p>
+							<p>
+								<span>空气质量:</span>
+								<span class="green">良</span>
+							</p>
+							<p>
+								<span>风力:</span>
+								<span>东风一级</span>
+							</p>
+						</li>
+						<li class="centerLi">
+							<img src="img/title.png" alt="" />
+						</li>
+						<li class="rightLi">
+							<p>
+								<span>2018.04.14</span>
+								<span class="time">14:30:02</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<!--内容-->
+				<div class="contentBox row">
+					<!--左侧区域-->
+					<div class="leftContent col-md-3 col-lg-3">
+						<div class="videoContent">
+							<div class="videoHeader">
+								<span class="line"></span>
+								<span class="textTitle">行为抓拍墙</span>
+							</div>
+							<div class="videoFrame">
+								<img src="img/6.png" alt="" />
+							</div>
+							<!--日期选择-->
+							<div class="selectDate">
+								<img src="img/search1.png" alt="" />
+							</div>
+							<!--滚动视频-->
+							<div class="videoScroll">
+								<ul class="videoList">
+									<li>
+										<div class="videoPhoto">
+											<img src="img/7.png" alt="" />
+										</div>
+									</li>
+									<li>
+										<div class="videoPhoto liOdd">
+											<img src="img/7.png" alt="" />
+										</div>
+									</li>
+									<li>
+										<div class="videoPhoto">
+											<img src="img/7.png" alt="" />
+										</div>
+									</li>
+									<li>
+										<div class="videoPhoto liOdd">
+											<img src="img/7.png" alt="" />
+										</div>
+									</li>
+									<li>
+										<div class="videoPhoto">
+											<img src="img/7.png" alt="" />
+										</div>
+									</li>
+									<li>
+										<div class="videoPhoto liOdd">
+											<img src="img/7.png" alt="" />
+										</div>
+									</li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<!--中间区域-->
+					<div class="centerContent col-md-6 col-lg-6">
+						<div class="map">
+							<img src="img/map.png" alt="" />
+						</div>
+						<div class="dataContent">
+							<div class="data">
+								<span class="line"></span>
+								<span class="textTitle">实时报警事件</span>
+							</div>
+							<div class="dataList">
+								<img src="img/1.png" alt="" />
+							</div>
+						</div>
+
+					</div>
+					<!--右侧区域-->
+					<div class="rightContent col-md-3 col-lg-3">
+						<!--设备感知-->
+						<div class="stateContent">
+							<div class="state">
+								<span class="line"></span>
+								<span class="textTitle">设备感知概况</span>
+							</div>
+							<div class="stateList">
+								<img src="img/3.png" alt="" />
+							</div>
+						</div>
+						<!--值班人员-->
+						<div class="stateContent jobPerson">
+							<div class="state">
+								<span class="line"></span>
+								<span class="textTitle">值班人员信息</span>
+								<span class="textTitle">事件处置信息</span>
+								<span class="textTitle">巡检信息</span>
+							</div>
+							<div class="stateList">
+								<img src="img/4.png" alt="" />
+							</div>
+						</div>
+						<!--人流变化-->
+						<div class="stateContent changePerson">
+							<div class="state">
+								<span class="line"></span>
+								<span class="textTitle">人流变化趋势</span>
+								<span class="textTitle">违法数量</span>
+							</div>
+							<div class="stateList">
+								<img src="img/5.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+
+</html>
