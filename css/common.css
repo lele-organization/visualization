@@ -41,6 +41,10 @@ a {
 	line-height: 0;
 	font-size: 0
 }
+
+.borderNone {
+	border: none;
+}
 /*头部*/
 
 .header {
@@ -104,42 +108,34 @@ a {
 /*内容*/
 
 .contentBox {
-	/* height: 954px; */
 	width: 100%;
-	padding: 20px;
+	padding: 20px 10px;
 	margin: 0;
-	/* margin: 20px; */
 }
-
 
 /*左侧区域*/
 
 .leftContent {
-	/* width: 25%; */
-	width: calc(100% * 0.2741);
+	width: 510px;
 	height: 954px;
 	float: left;
 	padding: 0;
 }
-
 
 /*中间区域*/
 
 .centerContent {
-	/* width: 50%; */
-	width: calc(100% * 0.4569);
+	width: 850px;
 	height: 954px;
-	/* margin: 0 10px; */
 	float: left;
 	padding: 0;
+	margin: 0 10px;
 }
-
 
 /*右侧区域*/
 
 .rightContent {
-	/* width: 25%; */
-	width: calc(100% * 0.2688);
+	width: 500px;
 	height: 954px;
 	float: left;
 	padding: 0;
@@ -151,3 +147,8 @@ a {
 .font-14{font-size:14px;}
 .font-16{font-size:16px;}
 .font-18{font-size:18px;}
+
+/* highcharts */
+.highcharts-credits {
+	display: none;
+}

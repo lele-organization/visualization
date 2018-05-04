@@ -100,8 +100,8 @@
 /*地图*/
 
 .map {
-	width: 98%;
-	margin-left: 1%;
+	width: 100%;
+	/* margin-left: 1%; */
 	height: 636px;
 	border: 1px solid #1567f9;
 }
@@ -110,9 +110,9 @@
 	height: 636px;
 }
 .dataContent {
-	width: 98%;
+	width: 100%;
 	border: 1px solid #1567f9;
-	margin-left: 1%;
+	/* margin-left: 1%; */
 	margin-top: 10px;
 	height: 308px;
 }
@@ -180,6 +180,57 @@
 	height: 284px;
 } */
 
+/* --------------------------------实时报警事件---------------------------- */
+.dataList {
+	width: 100%;
+}
+/* 表格 */
+.dataList .dataListTable {
+	width: 606px;
+	margin: 0 10px;
+}
+.dataList .dataListTable tr {
+	border-bottom: 2px solid #081f66;
+}
+.dataList .dataListTable thead th,
+.dataList .dataListTable tbody td {
+	text-align: center;
+	height: 22px;
+	line-height: 22px;
+	font-size: 10px;
+	color: #fff;
+	background-color: #125ecc;
+	border-right: 2px solid #081f66;
+}
+.dataList .dataListTable tbody tr td{
+	font-weight: normal;
+	background-color: #3e8ccc;
+}
+.dataList .dataListTable .width64{
+	width: 64px;
+}
+.dataList .dataListTable .width134{
+	width: 134px;
+}
+.dataList .dataListTable .width114{
+	width: 114px;
+}
+.dataList .dataListTable .width150{
+	width: 150px;
+}
+.dataList .dataListTable .width136{
+	width: 136px;
+	border: none;
+}
+.dataList .alertFlow {
+	width: 100%;
+	margin-top: 10px;
+	background-color: rgba(255, 255, 255, 0.12);
+}
+/* 圆饼图 */
+.dataList .dataPieChart {
+	width: 212px;
+}
 
 /* --------------------------值班人员信息------向下---------------------- */
 .jobPerson{
