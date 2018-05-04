@@ -1,3 +1,4 @@
+
 /*视频*/
 
 .videoContent {
@@ -174,7 +175,64 @@
 	width: 100%;
 	height: 274px;
 }
-.jobPerson .stateList>img{
+/* .jobPerson .stateList>img{
 	width: 100%;
 	height: 284px;
+} */
+
+
+/* --------------------------值班人员信息------向下---------------------- */
+.jobPerson{
+	overflow-y: hidden;
 }
+.jobPerson .stateList{
+	background: url(../img/bg_small.png) no-repeat;
+	background-position: center;
+    background-size: cover;
+	color:#fff;
+	position: relative;
+}
+
+.jobPerson .stateList .left{
+	width: 25%;
+	float: left;
+	height:100%;
+	padding:30px 10px;
+}
+.jobPerson .stateList .left .item{
+	width:96px;
+	height:48px;
+	font-size:12px;
+	position: relative;
+}
+.jobPerson .stateList .left .item:first-child{margin-bottom:30px;}
+.jobPerson .stateList .left .item:last-child{margin-top:30px;}
+
+.jobPerson .stateList .left .item .corner{
+	display: inline-block;
+	width:16px;
+	height:4px;
+	position: absolute;
+
+}
+.jobPerson .stateList .left .item .corner.left-top{border-left:1px solid #1f66cc;border-top:1px solid #1f66cc;left:0;top:0;}
+.jobPerson .stateList .left .item .corner.right-top{border-right:1px solid #1f66cc;border-top:1px solid #1f66cc;right:0;top:right;}
+.jobPerson .stateList .left .item .corner.left-bottom{border-left:1px solid #1f66cc;border-bottom:1px solid #1f66cc;left:0;bottom:0;}
+.jobPerson .stateList .left .item .corner.right-bottom{border-right:1px solid #1f66cc;border-bottom:1px solid #1f66cc;right:0;bottom:0;}
+.jobPerson .stateList .right{
+	width: 75%;
+    float: right;
+	font-size: 10px;
+	padding: 20px 10px 20px 0;
+}
+/* bootstrap table样式重写 */
+.jobPerson .stateList .right .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	padding:2px 0;
+	text-align:center;
+}
+.jobPerson .stateList .right .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border-bottom-width: 1px;
+}
+
+
+/* --------------------------值班人员信息------向上---------------------- */
