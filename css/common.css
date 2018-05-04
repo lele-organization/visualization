@@ -108,7 +108,7 @@ a {
 /*左侧区域*/
 
 .leftContent {
-	width: 25%;
+	width: 510px;
 	height: 954px;
 	float: left;
 	padding: 0;
@@ -118,7 +118,7 @@ a {
 /*中间区域*/
 
 .centerContent {
-	width: 50%;
+	width: 850px;
 	height: 954px;
 	float: left;
 	padding: 0;
@@ -128,7 +128,7 @@ a {
 /*右侧区域*/
 
 .rightContent {
-	width: 25%;
+	width: 500px;
 	height: 954px;
 	float: left;
 	padding: 0;

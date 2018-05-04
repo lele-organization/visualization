@@ -38,10 +38,10 @@
 
 .textTitle {
 	margin-left: 6px;
-	background-color: #1f66cc;
+	background-color: #195399;
 	height: 28px;
 	line-height: 24px;
-	border: 1px solid green;
+	border: 1px solid #00677f;
 	padding: 0 8px;
 	margin-top: 2px;
 }
@@ -186,53 +186,68 @@
 	overflow-y: hidden;
 }
 .jobPerson .stateList{
+	height: 282px;
 	background: url(../img/bg_small.png) no-repeat;
-	background-position: center;
-    background-size: cover;
+	background-position: initial;
+    background-size: contain;
 	color:#fff;
 	position: relative;
 }
 
 .jobPerson .stateList .left{
-	width: 25%;
-	float: left;
-	height:100%;
-	padding:30px 10px;
+	width: 96px;
+    position: absolute;
+    height: 224px;
+    top: 29px;
+    left: 20px;
+    /* bottom: 20px; */
 }
 .jobPerson .stateList .left .item{
 	width:96px;
 	height:48px;
 	font-size:12px;
 	position: relative;
+	box-sizing: border-box;
+	text-align: center;
+    line-height: 24px;
 }
-.jobPerson .stateList .left .item:first-child{margin-bottom:30px;}
-.jobPerson .stateList .left .item:last-child{margin-top:30px;}
+.jobPerson .stateList .left .item.first{margin-bottom:40px;}
+.jobPerson .stateList .left .item.last{margin-top:40px;}
 
 .jobPerson .stateList .left .item .corner{
 	display: inline-block;
 	width:16px;
-	height:4px;
+	height:8px;
 	position: absolute;
 
 }
-.jobPerson .stateList .left .item .corner.left-top{border-left:1px solid #1f66cc;border-top:1px solid #1f66cc;left:0;top:0;}
-.jobPerson .stateList .left .item .corner.right-top{border-right:1px solid #1f66cc;border-top:1px solid #1f66cc;right:0;top:right;}
-.jobPerson .stateList .left .item .corner.left-bottom{border-left:1px solid #1f66cc;border-bottom:1px solid #1f66cc;left:0;bottom:0;}
-.jobPerson .stateList .left .item .corner.right-bottom{border-right:1px solid #1f66cc;border-bottom:1px solid #1f66cc;right:0;bottom:0;}
+.jobPerson .stateList .left .item .corner.left-top{border-left:1px solid #00b7f1;border-top:1px solid #00b7f1;left:0;top:0;}
+.jobPerson .stateList .left .item .corner.right-top{border-right:1px solid #00b7f1;border-top:1px solid #00b7f1;right:0;top:right;}
+.jobPerson .stateList .left .item .corner.left-bottom{border-left:1px solid #00b7f1;border-bottom:1px solid #00b7f1;left:0;bottom:0;}
+.jobPerson .stateList .left .item .corner.right-bottom{border-right:1px solid #00b7f1;border-bottom:1px solid #00b7f1;right:0;bottom:0;}
 .jobPerson .stateList .right{
-	width: 75%;
-    float: right;
-	font-size: 10px;
-	padding: 20px 10px 20px 0;
+	width: calc(102px + 114px + 138px + 4px);
+    box-sizing: border-box;
+    position: absolute;
+    font-size: 10px;
+    padding: 14px 10px 14px 0;
+    right: 0;
 }
 /* bootstrap table样式重写 */
+.jobPerson .stateList .right .table{height:252px;margin-bottom:0;}
+.jobPerson .stateList .right .table>thead>tr>th.first{width:102px;}
+.jobPerson .stateList .right .table>thead>tr>th.middle{width:114px;}
+.jobPerson .stateList .right .table>thead>tr>th.last{width:138px;}
 .jobPerson .stateList .right .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
-	padding:2px 0;
+	padding:0;
 	text-align:center;
+	box-sizing: content-box;
+	height:22px;
+	line-height:22px;
 }
-.jobPerson .stateList .right .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
-    border-bottom-width: 1px;
-}
-
+/* .jobPerson .stateList .right .table-bordered{border: 1px solid rgba(255,255,255,.2);} */
+.jobPerson .stateList .right .table-bordered{border: 1px solid rgba(255,255,255,.2);}
+.jobPerson .stateList .right .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {border-bottom-width: 1px;}
+.jobPerson .stateList .right .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {border: 1px solid rgba(255,255,255,0.2);}
 
 /* --------------------------值班人员信息------向上---------------------- */
