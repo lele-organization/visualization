@@ -53,13 +53,15 @@ a {
 .headerUl>li {
 	float: left;
 	width: 33.3%;
+	padding-left: 20px;
 }
 
 .leftLi>p {
 	float: left;
-	padding-left: 20px;
-	font-size: 22px;
-	margin-right: 30px;
+	/* padding-left: 20px; */
+	font-size: 20px;
+	width: 33.3%;
+	/* margin-right: 30px; */
 }
 
 .centerLi>img {
@@ -97,14 +99,16 @@ a {
 .contentBox {
 	/* height: 954px; */
 	width: 100%;
-	margin: 20px;
+	padding: 20px;
+	margin: 0;
+	/* margin: 20px; */
 }
 
 
 /*左侧区域*/
 
 .leftContent {
-	width: 510px;
+	width: 25%;
 	height: 954px;
 	float: left;
 	padding: 0;
@@ -114,6 +118,7 @@ a {
 /*中间区域*/
 
 .centerContent {
+	width: 50%;
 	height: 954px;
 	float: left;
 	padding: 0;
@@ -123,6 +128,7 @@ a {
 /*右侧区域*/
 
 .rightContent {
+	width: 25%;
 	height: 954px;
 	float: left;
 	padding: 0;
