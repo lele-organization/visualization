@@ -28,6 +28,13 @@ a {
 	background-color: #081f66;
 }
 
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
 .clear {
 	clear: both;
 	height: 0;
@@ -108,7 +115,8 @@ a {
 /*左侧区域*/
 
 .leftContent {
-	width: 25%;
+	/* width: 25%; */
+	width: calc(100% * 0.2741);
 	height: 954px;
 	float: left;
 	padding: 0;
@@ -118,8 +126,10 @@ a {
 /*中间区域*/
 
 .centerContent {
-	width: 50%;
+	/* width: 50%; */
+	width: calc(100% * 0.4569);
 	height: 954px;
+	/* margin: 0 10px; */
 	float: left;
 	padding: 0;
 }
@@ -128,7 +138,8 @@ a {
 /*右侧区域*/
 
 .rightContent {
-	width: 25%;
+	/* width: 25%; */
+	width: calc(100% * 0.2688);
 	height: 954px;
 	float: left;
 	padding: 0;
