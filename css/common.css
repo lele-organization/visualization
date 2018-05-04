@@ -28,11 +28,22 @@ a {
 	background-color: #081f66;
 }
 
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
 .clear {
 	clear: both;
 	height: 0;
 	line-height: 0;
 	font-size: 0
+}
+
+.borderNone {
+	border: none;
 }
 /*头部*/
 
@@ -97,13 +108,10 @@ a {
 /*内容*/
 
 .contentBox {
-	/* height: 954px; */
 	width: 100%;
-	padding: 20px;
+	padding: 20px 10px;
 	margin: 0;
-	/* margin: 20px; */
 }
-
 
 /*左侧区域*/
 
@@ -114,7 +122,6 @@ a {
 	padding: 0;
 }
 
-
 /*中间区域*/
 
 .centerContent {
@@ -122,8 +129,8 @@ a {
 	height: 954px;
 	float: left;
 	padding: 0;
+	margin: 0 10px;
 }
-
 
 /*右侧区域*/
 
@@ -140,3 +147,8 @@ a {
 .font-14{font-size:14px;}
 .font-16{font-size:16px;}
 .font-18{font-size:18px;}
+
+/* highcharts */
+.highcharts-credits {
+	display: none;
+}

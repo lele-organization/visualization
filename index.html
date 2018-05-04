@@ -117,7 +117,79 @@
 								<span class="textTitle">实时报警事件</span>
 							</div>
 							<div class="dataList">
-								<img src="img/1.png" alt="" />
+								<!-- <img src="img/1.png" alt="" /> -->
+								<div class="dataListTable fl">
+									<table>
+										<thead>
+											<tr>
+												<th class="width64">级别</th>
+												<th class="width134">时间</th>
+												<th class="width114">设备类型</th>
+												<th class="width150">地理位置</th>
+												<th class="width136">报警类型</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="width64">紧急</td>
+												<td class="width134">2018-04-16 10:25:31</td>
+												<td class="width114">供电系统</td>
+												<td class="width150">滨江大道33号楼</td>
+												<td class="width136">供电系统重大故障</td>
+											</tr>
+											<tr>
+												<td class="width64">重要</td>
+												<td class="width134">2018-04-16 10:25:31</td>
+												<td class="width114">物联烟感</td>
+												<td class="width150">滨江大道15号406室</td>
+												<td class="width136">火灾告警</td>
+											</tr>
+											<tr>
+												<td class="width64">一般</td>
+												<td class="width134">2018-04-16 10:25:31</td>
+												<td class="width114">智慧门禁</td>
+												<td class="width150">滨江大道30号楼</td>
+												<td class="width136">单元门未关闭告警</td>
+											</tr>
+											<tr>
+												<td class="width64">一般</td>
+												<td class="width134">2018-04-16 10:25:31</td>
+												<td class="width114">照明灯</td>
+												<td class="width150">滨江大道57号511室</td>
+												<td class="width136">照明灯故障</td>
+											</tr>
+											<tr class="borderNone">
+												<td class="width64">一般</td>
+												<td class="width134">2018-04-16 10:25:31</td>
+												<td class="width114">照明灯</td>
+												<td class="width150">滨江大道57号511室</td>
+												<td class="width136">照明灯故障</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<!-- <div class="alertFlow">
+										<div>
+											<span>推送</span>
+											<span>处理</span>
+											<span>结束</span>
+										</div>
+										<div>
+											<span>1</span>
+											<span>2</span>
+											<span>3</span>
+											<div></div>
+										</div>
+										<div>
+											
+										</div>
+									</div> -->
+								</div>
+								<div class="dataPieChart fl">
+									<p>实时报警事件统计</p>
+									<div id="alarmEventStatistics" style="width: 212px;height: 200px;"></div>
+								</div>
+								<div class="clear"></div>
 							</div>
 						</div>
 
@@ -256,6 +328,7 @@
 
 	</body>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/highcharts.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<script src="js/index.js"></script>
 
 </html>
