@@ -296,9 +296,12 @@
 	height:22px;
 	line-height:22px;
 }
-/* .jobPerson .stateList .right .table-bordered{border: 1px solid rgba(255,255,255,.2);} */
-.jobPerson .stateList .right .table-bordered{border: 1px solid rgba(255,255,255,.2);}
+.jobPerson .stateList .right .table-bordered{border: 1px solid #4f5c8d;}
+/* .jobPerson .stateList .right .table-bordered{
+	border: 1px solid rgba(255,255,255,.2);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33ffffff,endColorstr=#33ffffff);
+} */
 .jobPerson .stateList .right .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {border-bottom-width: 1px;}
-.jobPerson .stateList .right .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {border: 1px solid rgba(255,255,255,0.2);}
+.jobPerson .stateList .right .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {border: 1px solid #4f5c8d;}
 
 /* --------------------------值班人员信息------向上---------------------- */
