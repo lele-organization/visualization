@@ -234,14 +234,14 @@
 
 /* --------------------------设备感知概况------向下---------------------- */
 .equipmentPerception .stateList{color:#fff;background: url(../img/bg_small.png) no-repeat;background-position: initial;background-size: contain;}
-.equipmentPerception .stateList .top{margin:16px 0;}
+.equipmentPerception .stateList .top{margin:16px 0;padding:0 10px; text-align: center;}
 .equipmentPerception .stateList .top .item{display: inline-block;width:32%;text-align: center;}
 .equipmentPerception .stateList .top .item .type{margin:5px 0;}
 .equipmentPerception .stateList .top .item .num{display: inline-block;}
 
 .equipmentPerception .stateList .bottom{margin-bottom:10px;padding-left:10px;}
 .equipmentPerception .stateList .bottom .item{
-	/* display: inline-block; */
+	position: relative;
 	margin-right: 10px;
 	float: left;
 	width:152px;height:66px;box-sizing: border-box;border:1px solid #195399;}
@@ -252,7 +252,19 @@
 	/* display:inline-block; */
 	height:64px;width:36px;background-color: rgba(0,124,216,0.2);}
 .equipmentPerception .stateList .bottom .item .left .vertical{width:12px;}
-.equipmentPerception .stateList .bottom .item .right{display:inline-block;}
+.equipmentPerception .stateList .bottom .item .right{display:inline-block;text-align: center;position: relative;padding-top:12px;width:114px;}
+.equipmentPerception .stateList .bottom .item .short-line{position: absolute;width: 36px;height: 1px;border-bottom: 1px solid #00b7f1;}
+.equipmentPerception .stateList .bottom .item .short-line.top-left{top:0;left:0;}
+.equipmentPerception .stateList .bottom .item .short-line.top-middle{top:0;left:58px;}
+.equipmentPerception .stateList .bottom .item .short-line.top-right{top:0;right:0;}
+.equipmentPerception .stateList .bottom .item .short-line.bottom-left{bottom:0;left:0;}
+.equipmentPerception .stateList .bottom .item .short-line.bottom-middle{bottom:0;left:58px;}
+.equipmentPerception .stateList .bottom .item .short-line.bottom-right{bottom:0;right:0;}
+.equipmentPerception .stateList .bottom .item .right .proportion{margin-top: 5px;}
+.equipmentPerception .stateList .bottom .item .right .proportion>div{ height: 4px;position: absolute;left: 12px;}
+.equipmentPerception .stateList .bottom .item .right .proportion>div.baseline{ width:90px;background-color:#e66b62; }
+.equipmentPerception .stateList .bottom .item .right .proportion>div.topline{ width:70px;background-color: #5dc274;}
+
 
 /* --------------------------设备感知概况------向上---------------------- */
 
