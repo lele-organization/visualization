@@ -10,6 +10,7 @@ $(function () {
     init: function () {
       var _this = this
       _this.initHighCharts()
+      _this.initHumanFlowTrend()
     },
 
     initHighCharts: function () {
@@ -82,10 +83,83 @@ $(function () {
                 
             }
         ]
-    };
+      };
+
+      myChart.setOption(option);
+    },
+
+    initHumanFlowTrend : function () {
+      var myChart =  echarts.init(document.getElementById('humanFlowTrend'));
+
+      var option = {
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['区域A','区域B','区域C'],
+            right:'20',
+            textStyle:{
+                color:'#fff',
+                fontSize:12
+            }
+            
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            // boundaryGap: false,
+            data: ['0','2','4','6','8','10','12','14','16','18','20','22(h)'],
+            axisLine:{
+                lineStyle:{
+                    color:'#ccc'
+                }
+            }
+        },
+        yAxis: {
+            type: 'value',
+            name:'人流量',
+            nameTextStyle:{
+                color:'#ccc',
+                align:'right'
+                
+            },
+            axisLine:{
+                show:false,
+                lineStyle:{
+                    color:'#ccc'
+                }
+            }
+            // nameLocation:'end'
+            // show:false
+        },
+        series: [
+            {
+                name:'区域A',
+                type:'line',
+                data:[100, 254, 1422, 824, 2687, 2467, 254,1587,1800,954,1542,254]
+            },
+            {
+                name:'区域B',
+                type:'line',
+                data:[580,467, 254,1587,1800,1254, 22, 824, 2687, 954,1542,254]
+            },
+            {
+                name:'区域C',
+                type:'line',
+                data:[ 800, 835, 900,1352,1150,352,1542,254,1520, 1254, 522, 824]
+            },
+        ],
+        color:['#f3af4a', '#01a0db','#56b472'],
+      };
 
       myChart.setOption(option);
     }
+
   }
 
   var page = new Page();
