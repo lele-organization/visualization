@@ -206,22 +206,11 @@
 	font-weight: normal;
 	background-color: #3e8ccc;
 }
-.dataList .dataListTable .width64{
-	width: 64px;
-}
-.dataList .dataListTable .width134{
-	width: 134px;
-}
-.dataList .dataListTable .width114{
-	width: 114px;
-}
-.dataList .dataListTable .width150{
-	width: 150px;
-}
-.dataList .dataListTable .width136{
-	width: 136px;
-	border: none;
-}
+.dataList .dataListTable .width66{width: 66px;}
+.dataList .dataListTable .width134{width: 134px;}
+.dataList .dataListTable .width114{width: 114px;}
+.dataList .dataListTable .width150{width: 150px;}
+.dataList .dataListTable .width142{width: 142px;border: none;}
 .dataList .alertFlow {
 	width: 100%;
 	margin-top: 10px;
@@ -230,7 +219,44 @@
 /* 圆饼图 */
 .dataList .dataPieChart {
 	width: 212px;
+	color:#fff;
+	height:250px;
+	background-color: rgba(0,124,216,0.2);
 }
+.dataList .dataPieChart p{font-size:12px;font-weight:bold;margin: 10px;}
+.dataList .dataPieChart .tip-label{margin-top: 20px;}
+.dataList .dataPieChart .tip-label>span{display: inline-block;height:12px;width: 12px;margin:0 12px;}
+.dataList .dataPieChart .tip-label>span.danger{background-color: #ff0000;}
+.dataList .dataPieChart .tip-label>span.warning{background-color: #f08400;}
+.dataList .dataPieChart .tip-label>span.common{background-color: #ffdb5f;}
+.dataList .process{
+	background-color: rgba(0,124,216,0.2);    
+	color:#fff;
+	width: 606px;
+    height: 98px;
+	margin: 10px;
+	font-size:12px;
+	position: relative;
+	text-align: center;
+	padding: 10px 6px;
+}
+.dataList .process .connact-line{
+	width: 230px;
+    height: 2px;
+	border: 2px solid #f5b04a;
+	position: absolute;
+	top:38px;
+}
+.dataList .process .connact-line.one{left:64px;}
+.dataList .process .connact-line.two{left:310px;}
+.dataList .process .item{text-align:center;}
+.dataList .process .item.margin-146{margin-right:146px;}
+.dataList .process .item .title{margin-bottom:4px;}
+.dataList .process .item .date{width:100px;text-align:center;margin-top:4px;}
+.dataList .process .item img{width:18px;}
+
+
+
 
 /* --------------------------设备感知概况------向下---------------------- */
 .equipmentPerception .stateList{color:#fff;background: url(../img/bg_small.png) no-repeat;background-position: initial;background-size: contain;}
@@ -261,7 +287,7 @@
 .equipmentPerception .stateList .bottom .item .short-line.bottom-middle{bottom:0;left:58px;}
 .equipmentPerception .stateList .bottom .item .short-line.bottom-right{bottom:0;right:0;}
 .equipmentPerception .stateList .bottom .item .right .proportion{margin-top: 5px;}
-.equipmentPerception .stateList .bottom .item .right .proportion>div{ height: 4px;position: absolute;left: 12px;}
+.equipmentPerception .stateList .bottom .item .right .proportion>div{ height: 4px;position: absolute;left: 12px;border-radius:3px;}
 .equipmentPerception .stateList .bottom .item .right .proportion>div.baseline{ width:90px;background-color:#e66b62; }
 .equipmentPerception .stateList .bottom .item .right .proportion>div.topline{ width:70px;background-color: #5dc274;}
 
