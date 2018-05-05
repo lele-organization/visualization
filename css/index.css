@@ -232,6 +232,30 @@
 	width: 212px;
 }
 
+/* --------------------------设备感知概况------向下---------------------- */
+.equipmentPerception .stateList{color:#fff;background: url(../img/bg_small.png) no-repeat;background-position: initial;background-size: contain;}
+.equipmentPerception .stateList .top{margin:16px 0;}
+.equipmentPerception .stateList .top .item{display: inline-block;width:32%;text-align: center;}
+.equipmentPerception .stateList .top .item .type{margin:5px 0;}
+.equipmentPerception .stateList .top .item .num{display: inline-block;}
+
+.equipmentPerception .stateList .bottom{margin-bottom:10px;padding-left:10px;}
+.equipmentPerception .stateList .bottom .item{
+	/* display: inline-block; */
+	margin-right: 10px;
+	float: left;
+	width:152px;height:66px;box-sizing: border-box;border:1px solid #195399;}
+.equipmentPerception .stateList .bottom .item .left{
+	float: left;
+	text-align: center;
+	padding:8px 12px;
+	/* display:inline-block; */
+	height:64px;width:36px;background-color: rgba(0,124,216,0.2);}
+.equipmentPerception .stateList .bottom .item .left .vertical{width:12px;}
+.equipmentPerception .stateList .bottom .item .right{display:inline-block;}
+
+/* --------------------------设备感知概况------向上---------------------- */
+
 /* --------------------------值班人员信息------向下---------------------- */
 .jobPerson{
 	overflow-y: hidden;
