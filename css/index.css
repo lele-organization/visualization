@@ -105,10 +105,14 @@
 	height: 636px;
 	border: 1px solid #1567f9;
 }
-.map>img{
-	width: 100%;
+#mapContainer{
+	width: 848px;
 	height: 636px;
 }
+/* .map>img{
+	width: 100%;
+	height: 636px;
+} */
 .dataContent {
 	width: 100%;
 	border: 1px solid #1567f9;

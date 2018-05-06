@@ -4,10 +4,12 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
 		<title>东岸可视化首页</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
 		<!--[if lt IE 9]>  <link rel="stylesheet" type="text/css" href="css/hack.css"/> <![endif]-->
 		<!--[if lte IE 8]>  <link rel="stylesheet" type="text/css" href="css/hack.css"/> <![endif]-->
 		<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
@@ -108,8 +110,8 @@
 					</div>
 					<!--中间区域-->
 					<div class="centerContent col-md-6 col-lg-6">
-						<div class="map">
-							<img src="img/map.png" alt="" />
+						<div class="map" id="mapContainer">
+							<!-- <img src="img/map.png" alt="" /> -->
 						</div>
 						<div class="dataContent">
 							<div class="data">
@@ -454,6 +456,9 @@
 	</body>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="js/echarts.min.js"></script>
+	<script src="https://webapi.amap.com/js/marker.js"></script>
+	<script type="text/javascript" src = 'http://webapi.amap.com/maps?v=1.4.6&key=16b52be6edd6e25af5f35dff87c7c56c'></script>
+	<!-- <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script> -->
 	<script src="js/index.js"></script>
 
 </html>

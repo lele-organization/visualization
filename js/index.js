@@ -11,6 +11,7 @@ $(function () {
       var _this = this
       _this.initHighCharts()
       _this.initHumanFlowTrend()
+      _this.initMap()
     },
 
     initHighCharts: function () {
@@ -158,6 +159,80 @@ $(function () {
       };
 
       myChart.setOption(option);
+    },
+
+    initMap :function () {
+
+        var map = new AMap.Map('mapContainer', {
+            resizeEnable: true,
+            zoom:15,
+            center: [121.502213,31.238128],
+            mapStyle: 'amap://styles/debb37a369de5ecff92cc599ace68dfa'//样式URL
+        });
+
+
+        // maker camera_map
+        var markers = []; //province见Demo引用的JS文件
+        var camera = [
+            {
+                type:0,
+                center:'121.502213,31.238128',
+                name:'陆家嘴'
+            },{
+                type:1,
+                center:'121.49882,31.238767',
+                name:'张三'
+            },{
+                type:2,
+                center:'121.497082,31.240492',
+                name:'打架斗殴'
+            },{
+                type:2,
+                center:'121.496867,31.235116',
+                name:'打架斗殴'
+            }
+        ];
+        for (var i = 0; i < camera.length; i += 1) {
+                var marker;
+    			if (camera[i].type === 0) {     // 摄像头
+    				var icon = new AMap.Icon({
+    					image: './img/camera_map.png',
+    					size: new AMap.Size(24, 24)
+    				});
+    				marker = new AMap.Marker({
+    					icon: icon,
+    					position: camera[i].center.split(','),
+    					// offset: new AMap.Pixel(-12,-12),
+    					zIndex: 101,
+    					title: camera[i].name + '摄像头',
+    					map: map
+    				});
+                } else if(camera[i].type === 1){    // 人
+    				var icon = new AMap.Icon({
+    					image: './img/person_map.png',
+    					size: new AMap.Size(24, 24)
+    				});
+    				marker = new AMap.Marker({
+                        icon: icon,
+    					position: camera[i].center.split(','),
+    					title: camera[i].name + '正在巡逻',
+    					map: map
+    				});
+    			}else{      // 事件
+                    var icon = new AMap.Icon({
+    					image: './img/event_map.png',
+    					size: new AMap.Size(24, 24)
+    				});
+    				marker = new AMap.Marker({
+                        icon: icon,
+    					position: camera[i].center.split(','),
+    					title: '正在发生：' + camera[i].name,
+    					map: map
+    				});
+                }
+    			markers.push(marker);
+    		}
+			  map.setFitView();
     }
 
   }
