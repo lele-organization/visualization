@@ -11,7 +11,7 @@ $(function () {
       var _this = this
       _this.initHighCharts()
       _this.initHumanFlowTrend()
-      _this.initMap()
+    //   _this.initMap()
     },
 
     initHighCharts: function () {
@@ -172,7 +172,7 @@ $(function () {
 
 
         // maker camera_map
-        var markers = []; //province见Demo引用的JS文件
+        var markers = []; 
         var camera = [
             {
                 type:0,

@@ -99,103 +99,38 @@
 
 /*地图*/
 
-.map {
-	width: 100%;
-	/* margin-left: 1%; */
-	height: 636px;
-	border: 1px solid #1567f9;
-}
-#mapContainer{
-	width: 848px;
-	height: 636px;
-}
-/* .map>img{
-	width: 100%;
-	height: 636px;
-} */
-.dataContent {
-	width: 100%;
-	border: 1px solid #1567f9;
-	/* margin-left: 1%; */
-	margin-top: 10px;
-	height: 308px;
-}
+.map {width: 100%;height: 636px;border: 1px solid #1567f9;background: url(../img/map_cut.png) no-repeat;background-position: initial;background-size: contain;position: relative;}
+.map img{position: absolute;}
+.map img.img-1{top: 340px;left: 500px;}
+.map img.img-2{top: 362px;left: 437px;}
+.map img.img-3{top: 318px;left: 568px;}
+.map img.img-4{top: 373px;left: 302px;}
+.map img.img-5{top: 372px;left: 370px;}
+.map img.img-6{top: 291px;left: 645px;}
 
-.data {
-	height: 34px;
-	border-bottom: 2px solid #1567f9;
-	background: rgba(255, 255, 255, 0.2);
-	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#33ffffff, endColorstr=#33ffffff);
-}
+#mapContainer{width: 848px;height: 636px;}
 
-.data>span {
-	display: block;
-	float: left;
-	font-size: 14px;
-	font-weight: bold;
-	color: white;
-}
-
-.dataList {
-	height: 262px;
-	margin: 10px auto 10px auto;
-}
-.dataList>img{
-	width: 100%;
-	height: 262px;
-}
+.dataContent {width: 100%;border: 1px solid #1567f9;margin-top: 10px;height: 308px;}
+.data {height: 34px;border-bottom: 2px solid #1567f9;background: rgba(255, 255, 255, 0.2);filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#33ffffff, endColorstr=#33ffffff);}
+.data>span {display: block;float: left;font-size: 14px;font-weight: bold;color: white;}
+.dataList {height: 262px;margin: 10px auto 10px auto;}
+.dataList>img{width: 100%;height: 262px;}
 
 /*右侧区域*/
 
-.stateContent {
-	border: 1px solid #1567f9;
-	height: 308px;
-}
+.stateContent {border: 1px solid #1567f9;height: 308px;}
+.state {height: 34px;border-bottom: 2px solid #1567f9;background: rgba(255, 255, 255, 0.2);filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#33ffffff, endColorstr=#33ffffff);}
+.state>span {display: block;float: left;font-size: 14px;font-weight: bold;color: white;}
 
-.state {
-	height: 34px;
-	border-bottom: 2px solid #1567f9;
-	background: rgba(255, 255, 255, 0.2);
-	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#33ffffff, endColorstr=#33ffffff);
-}
-
-.state>span {
-	display: block;
-	float: left;
-	font-size: 14px;
-	font-weight: bold;
-	color: white;
-}
-
-.jobPerson {
-	margin-top: 10px;
-	height: 318px;
-}
-
-.changePerson {
-	margin-top: 10px;
-}
-.stateList>img{
-	width: 100%;
-	height: 274px;
-}
-/* .jobPerson .stateList>img{
-	width: 100%;
-	height: 284px;
-} */
+.jobPerson {margin-top: 10px;height: 318px;}
+.changePerson {margin-top: 10px;}
+.stateList>img{width: 100%;height: 274px;}
 
 /* --------------------------------实时报警事件---------------------------- */
-.dataList {
-	width: 100%;
-}
+.dataList {width: 100%;}
 /* 表格 */
-.dataList .dataListTable {
-	width: 606px;
-	margin: 0 10px;
-}
-.dataList .dataListTable tr {
-	border-bottom: 2px solid #081f66;
-}
+.dataList .dataListTable {width: 606px;margin: 0 10px;}
+.dataList .dataListTable tr {border-bottom: 2px solid #081f66;}
 .dataList .dataListTable thead th,
 .dataList .dataListTable tbody td {
 	text-align: center;
@@ -210,22 +145,20 @@
 	font-weight: normal;
 	background-color: #3e8ccc;
 }
+.dataList .dataListTable img{width:10px;vertical-align: baseline;}
 .dataList .dataListTable .width66{width: 66px;}
 .dataList .dataListTable .width134{width: 134px;}
 .dataList .dataListTable .width114{width: 114px;}
 .dataList .dataListTable .width150{width: 150px;}
 .dataList .dataListTable .width142{width: 142px;border: none;}
-.dataList .alertFlow {
-	width: 100%;
-	margin-top: 10px;
-	background-color: rgba(255, 255, 255, 0.12);
-}
+.dataList .alertFlow {width: 100%;margin-top: 10px;background-color: rgba(255, 255, 255, 0.1);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff);}
 /* 圆饼图 */
 .dataList .dataPieChart {
 	width: 212px;
 	color:#fff;
 	height:250px;
-	background-color: rgba(0,124,216,0.2);
+	background-color: rgba(255,255,255,0.1);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff);
 }
 .dataList .dataPieChart p{font-size:12px;font-weight:bold;margin: 10px;}
 .dataList .dataPieChart .tip-label{margin-top: 20px;}
@@ -234,7 +167,8 @@
 .dataList .dataPieChart .tip-label>span.warning{background-color: #f08400;}
 .dataList .dataPieChart .tip-label>span.common{background-color: #ffdb5f;}
 .dataList .process{
-	background-color: rgba(0,124,216,0.2);    
+	background-color: rgba(255,255,255,0.1);   
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff);
 	color:#fff;
 	width: 606px;
     height: 98px;
@@ -279,8 +213,9 @@
 	float: left;
 	text-align: center;
 	padding:8px 12px;
-	/* display:inline-block; */
-	height:64px;width:36px;background-color: rgba(0,124,216,0.2);}
+	height:64px;width:36px;background-color: rgba(0,124,216,0.2);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33007cd8,endColorstr=#33007cd8);
+}
 .equipmentPerception .stateList .bottom .item .left .vertical{width:12px;}
 .equipmentPerception .stateList .bottom .item .right{display:inline-block;text-align: center;position: relative;padding-top:12px;width:114px;}
 .equipmentPerception .stateList .bottom .item .short-line{position: absolute;width: 36px;height: 1px;border-bottom: 1px solid #00b7f1;}
@@ -299,9 +234,7 @@
 /* --------------------------设备感知概况------向上---------------------- */
 
 /* --------------------------值班人员信息------向下---------------------- */
-.jobPerson{
-	overflow-y: hidden;
-}
+.jobPerson{overflow-y: hidden;}
 .jobPerson .stateList{
 	height: 282px;
 	background: url(../img/bg_small.png) no-repeat;
@@ -330,14 +263,7 @@
 }
 .jobPerson .stateList .left .item.first{margin-bottom:40px;}
 .jobPerson .stateList .left .item.last{margin-top:40px;}
-
-.jobPerson .stateList .left .item .corner{
-	display: inline-block;
-	width:16px;
-	height:8px;
-	position: absolute;
-
-}
+.jobPerson .stateList .left .item .corner{display: inline-block;width:16px;height:8px;position: absolute;}
 .jobPerson .stateList .left .item .corner.left-top{border-left:1px solid #00b7f1;border-top:1px solid #00b7f1;left:0;top:0;}
 .jobPerson .stateList .left .item .corner.right-top{border-right:1px solid #00b7f1;border-top:1px solid #00b7f1;right:0;top:right;}
 .jobPerson .stateList .left .item .corner.left-bottom{border-left:1px solid #00b7f1;border-bottom:1px solid #00b7f1;left:0;bottom:0;}
@@ -363,10 +289,6 @@
 	line-height:22px;
 }
 .jobPerson .stateList .right .table-bordered{border: 1px solid #4f5c8d;}
-/* .jobPerson .stateList .right .table-bordered{
-	border: 1px solid rgba(255,255,255,.2);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33ffffff,endColorstr=#33ffffff);
-} */
 .jobPerson .stateList .right .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {border-bottom-width: 1px;}
 .jobPerson .stateList .right .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {border: 1px solid #4f5c8d;}
 
