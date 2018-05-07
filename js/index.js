@@ -12,6 +12,33 @@ $(function () {
       _this.initHighCharts()
       _this.initHumanFlowTrend()
     //   _this.initMap()
+    
+    _this.eventBind();
+    },
+
+    eventBind: function () {
+      var _this = this;
+      var _dataTime, _time;
+      setInterval(function () {
+        var _curTimeStr = _this.initLocalTime();
+        _dataTime = _curTimeStr.split(' ')[0];
+        _time = _curTimeStr.split(' ')[1];
+        $('.header .rightLi').find('.dateTime').text(_dataTime);
+        $('.header .rightLi').find('.time').text(_time);
+      }, 1000)
+    },
+    initLocalTime: function () {
+      var _this = this;
+      var _time = new Date();
+      var yyyy = _time.getFullYear();
+      var MM = (_time.getMonth() + 1) < 10 ? '0'+(_time.getMonth() + 1) : (_time.getMonth() + 1);
+      var dd = _time.getDate() < 10 ? '0'+_time.getDate() : _time.getDate();
+
+      var hh = _time.getHours();
+      var mm = _time.getMinutes() < 10 ? '0'+_time.getMinutes() : _time.getMinutes();
+      var ss = _time.getSeconds() < 10 ? '0'+_time.getSeconds(): _time.getSeconds();
+    //   var curDateTime = yyyy + '-' + MM + '-' + dd + ' ' + hh + ':' + mm + ':' + ss;
+      return yyyy + '-' + MM + '-' + dd + ' ' + hh + ':' + mm + ':' + ss;
     },
 
     initHighCharts: function () {
@@ -234,6 +261,7 @@ $(function () {
     		}
 			  map.setFitView();
     }
+
 
   }
 
